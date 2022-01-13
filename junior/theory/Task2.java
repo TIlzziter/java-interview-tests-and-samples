@@ -2,20 +2,20 @@
 
 public abstract class AbstractClass {
 
-    public OurAbstractClass() {
+    public AbstractClass() {
         System.out.println("I am abstract!");
     }
 }
 
 class DemoClass extends AbstractClass {
 
-    public OurDemoClass() {
+    public DemoClass() {
         System.out.println("I am demo!");
     }
 }
 
 class Main {
     public static void main(String[] args) {
-        DemoClass ourDemoClass = new DemoClass();
+        DemoClass DemoClass = new DemoClass();
     }
 }
