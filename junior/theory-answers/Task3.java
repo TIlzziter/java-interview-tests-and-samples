@@ -3,7 +3,7 @@
 class Main {
     public static void main(String[] args) {
 
-        List<String> stringList = new ArrayList<>();
+        var stringList = new ArrayList<String>();
         stringList.add("one");
         stringList.add("one and a half");
         stringList.add("two");
@@ -12,9 +12,7 @@ class Main {
 
         System.out.println("Before " + stringList);
 
-        Iterator<String> stringIterator = stringList.iterator();
-        while (stringIterator.hasNext()) {
-            String next = stringIterator.next();
+        for (var next : stringList) {
             if (next.equals("two and a half")) {
                 stringList.add("three");
             }
