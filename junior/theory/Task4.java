@@ -46,7 +46,7 @@ public class AccessQueueWorker implements Callable<MQDestination> {
     @Override
     public MQDestination call(int timeout) throws MQException {
         try{
-            return queueManager.accessQueue(queueName, accessMode, mode, timeout);
+            return queueManager.accessQueue(queueName, accessMode, timeout);
         }
         catch (MQException mqe) {
             setException(mqe);
