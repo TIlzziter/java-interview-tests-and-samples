@@ -16,6 +16,6 @@ class DemoClass extends AbstractClass {
 
 class Main {
     public static void main(String[] args) {
-        DemoClass DemoClass = new DemoClass();
+        DemoClass demoClass = new DemoClass();
     }
 }
